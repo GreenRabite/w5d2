@@ -1,0 +1,12 @@
+<h1><%= @sub.title %> Subreddit</h1>
+
+<ul>
+  <% @sub.posts.each do |post| %>
+  <li><%= link_to post.title, sub_post_url(post) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Create New Post", new_sub_post_url(@sub.id) %>
+
+
+<!-- http://localhost:3000/subs/1/posts/new -->

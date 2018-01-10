@@ -1,0 +1,24 @@
+/* PHASE 2: Notifications */
+.notifications-list {
+  display: none;
+}
+
+#notifications {
+  position: relative;
+}
+
+#notifications:hover .notifications-list{
+  display: block;
+  position: absolute;
+  background: white;
+  color: black;
+  width: 230px;
+}
+
+#notifications .notifications-list li{
+  border-bottom: solid 1px rgb(200, 200, 200);
+}
+
+#notifications .notifications-list li:hover{
+  background: rgb(200, 200, 200);
+}
